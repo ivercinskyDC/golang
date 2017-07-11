@@ -8,7 +8,7 @@ func (x Mint) IsDiv3Or5() bool {
 	return x%3 == 0 || x%5 == 0
 }
 
-//AddWithCond adds all the Mints from 1 to t that satisfy the condition
+//AddWithCond adds all the Mints from 1 to t that satisfies the condition
 func AddWithCond(c func(t Mint) bool, t int) int {
 	res := 0
 	for i := 1; i <= t; i++ {
